@@ -1,7 +1,7 @@
 holder = 0
 concatenate = 0
 
-with open('input_day_01.txt', 'r') as file:
+with open('input_day_01_2.txt', 'r') as file:
     for line in file:
         numeric_string = ''.join(filter(str.isdigit, line))  # вытаскиваем только цифры
         concatenate = int(numeric_string[0] + numeric_string[-1])

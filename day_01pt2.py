@@ -12,8 +12,8 @@ with open('input_day_01_2.txt', 'r') as file:
             if char in line:
                 new_line = line.replace(char, replacement)
                 line = new_line #every time a replacement is done the line is updated so the next iteration of replacement can happen
-                print(line)
+        numeric_string = ''.join(filter(str.isdigit, line))  # вытаскиваем только цифры
+        concatenate = int(numeric_string[0] + numeric_string[-1])
+        holder = holder + concatenate
+    print(holder)
         #now all the lines consist of numbers and random letters
-
-
-
